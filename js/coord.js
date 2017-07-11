@@ -1,13 +1,18 @@
 export default class Coord {
-  plus() {
-
+  constructor(x,y) {
+    this.x = x;
+    this.y = y;
   }
 
-  equals() {
-
+  plus(coord) {
+    return new Coord(this.x + coord.x, this.y + coord.y);
   }
 
-  isOpposite() {
+  equals(coord) {
+    return (this.x === coord.x) && (this.y === coord.y);
+  }
 
+  isOpposite(coord) {
+    return (this.x === (-1 * coord.x)) && (this.y === (-1 * coord.y));
   }
 }
