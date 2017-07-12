@@ -16,9 +16,9 @@ DOM-Tycoon is an incredibly lightweight library built using vanilla JavaScript t
 
 ## Basic Functionalities
 
-`$l(arg)` instantiates a new instance of a selection of DOM nodes. Pass in a string to collect the relevant CSS selector or HTML element. Pass in a function and the function will be stored in a queue and executed after DOMContentLoaded.
+- `$l(arg)` instantiates a new instance of a **selection** of DOM nodes. Pass in a string to collect the relevant CSS selector or HTML element. Pass in a function and the function will be stored in a queue and executed after DOMContentLoaded.
 
-`$l.ajax(options)` to send an AJAX request. This returns a `Promise` object.
+- `$l.ajax(options)` to send an AJAX request. This returns a `Promise` object.
 
 Default parameters:
 ```
