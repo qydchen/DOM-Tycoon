@@ -5,7 +5,6 @@ DOM-Tycoon is an incredibly lightweight library built using vanilla JavaScript t
 ## Using this library
 
   Clone the repo, then:
-
   ```html
   <head>
     <meta charset="utf-8">
@@ -19,7 +18,6 @@ DOM-Tycoon is an incredibly lightweight library built using vanilla JavaScript t
 - `$l(arg)` instantiates a new instance of a **selection** of DOM nodes. Pass in a string to collect the relevant CSS selector or HTML element. Pass in a function and the function will be stored in a queue and executed after DOMContentLoaded.
 
 - `$l.ajax(options)` to send an AJAX request. This returns a `Promise` object.
-
 Default parameters:
 ```
 {
@@ -32,7 +30,7 @@ Default parameters:
 }
 ```
 
-### Manipulation and Traversal
+## Manipulation and Traversal
 
 - `html(string)` replaces the inner HTML of each element in a selection. If no arguments are given, it will return the inner HTML of the first node in the selection.
 
@@ -54,14 +52,16 @@ Default parameters:
 
 - `remove()` removes all children from the selection.
 
-### Event Handling
+## Event Handling
 
--  `on(action, cb)` adds an event listener action on a node collection that executes the given callback.
+- `on(action, cb)` adds an event listener action on a node collection that executes the given callback.
 
 - `off(action)` clears the event listener of the event type specified.
 
-## A Game Inspired implemented with  DOM-Tycoon
-A simple implementation of the classic game Snake demonstrates the core functionality of the library. Check out a live demo and the source code below.
+## A Game Implemented with DOM-Tycoon
+View the live demo and source code below.
+
+![](gif/mushroom.gif)
 
 [Game](http://davidchen.world/MushroomMania/)
 
